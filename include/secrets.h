@@ -8,6 +8,14 @@
 
 //
 
+// Change for WebSocket
+#define WS_HOST "qxz0nfml-4000.asse.devtunnels.ms"
+#define WS_PORT 443
+#define WS_PATH "/ws/esp"
+#define WS_KEY "key"
+
+//
+
 // Change for Power Level % Reading
 #define SSR_PWR_LVL_PIN 16
 
