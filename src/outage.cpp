@@ -27,7 +27,7 @@ namespace ptg
 {
     void setupOutage()
     {
-        pinMode(SSR_PWR_INTRPT_PIN, INPUT_PULLUP);
+        pinMode(SSR_PWR_INTRPT_PIN, INPUT);
         lastPowerInterruptionSentAt = millis() - postIntervalMs;
     }
 
@@ -36,7 +36,7 @@ namespace ptg
         unsigned long now = millis();
         if (now - lastPowerInterruptionSentAt < postIntervalMs) return;
 
-        bool powered = digitalRead(SSR_PWR_INTRPT_PIN) == LOW;
+        bool powered = digitalRead(SSR_PWR_INTRPT_PIN) == HIGH;
         emitPowerInterruption(powered);
         lastPowerInterruptionSentAt = now;
     }
