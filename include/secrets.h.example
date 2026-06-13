@@ -17,7 +17,7 @@
 //
 
 // Change for Power Level % Reading
-#define SSR_PWR_LVL_PIN 16
+#define SSR_PWR_LVL_PIN 34
 
 // Change for Power Interruption Reading
-#define SSR_PWR_INTRPT_PIN 17
+#define SSR_PWR_INTRPT_PIN 23
